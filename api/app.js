@@ -33,7 +33,7 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb://qa-user:w0l0x1189QA@conduit.cb256.mongodb.net/qa-project?retryWrites=true&w=majority');
   mongoose.set('debug', true);
 }
 
